@@ -37,7 +37,7 @@ export const Route = createFileRoute("/properties/$id")({
 });
 
 function Page() {
-  const p = Route.useLoaderData();
+  const p = Route.useLoaderData() as Property;
   const [active, setActive] = useState(0);
   const [lightbox, setLightbox] = useState(false);
   const [lead, setLead] = useState<{ open: boolean; intent: "brochure" | "info" | "visit" | "contact"; title: string }>(
