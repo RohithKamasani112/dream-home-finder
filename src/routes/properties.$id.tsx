@@ -8,11 +8,11 @@ import { Navbar, MobileBottomBar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { PropertyCard } from "@/components/PropertyCard";
 import { LeadModal } from "@/components/LeadModal";
-import { getProperty, listProperties, fullMoney, money, toggleFavorite, getFavorites } from "@/lib/store";
+import { getProperty, listProperties, fullMoney, money, toggleFavorite, getFavorites, type Property } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
 export const Route = createFileRoute("/properties/$id")({
-  loader: ({ params }) => {
+  loader: ({ params }): Property => {
     const p = getProperty(Number(params.id));
     if (!p) throw notFound();
     return p;
