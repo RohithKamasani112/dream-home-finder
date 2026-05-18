@@ -9,8 +9,32 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as RentRouteImport } from './routes/rent'
+import { Route as FavoritesRouteImport } from './routes/favorites'
+import { Route as ExploreRouteImport } from './routes/explore'
+import { Route as BuyRouteImport } from './routes/buy'
 import { Route as IndexRouteImport } from './routes/index'
 
+const RentRoute = RentRouteImport.update({
+  id: '/rent',
+  path: '/rent',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FavoritesRoute = FavoritesRouteImport.update({
+  id: '/favorites',
+  path: '/favorites',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExploreRoute = ExploreRouteImport.update({
+  id: '/explore',
+  path: '/explore',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuyRoute = BuyRouteImport.update({
+  id: '/buy',
+  path: '/buy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +43,72 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/buy': typeof BuyRoute
+  '/explore': typeof ExploreRoute
+  '/favorites': typeof FavoritesRoute
+  '/rent': typeof RentRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/buy': typeof BuyRoute
+  '/explore': typeof ExploreRoute
+  '/favorites': typeof FavoritesRoute
+  '/rent': typeof RentRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/buy': typeof BuyRoute
+  '/explore': typeof ExploreRoute
+  '/favorites': typeof FavoritesRoute
+  '/rent': typeof RentRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/buy' | '/explore' | '/favorites' | '/rent'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/buy' | '/explore' | '/favorites' | '/rent'
+  id: '__root__' | '/' | '/buy' | '/explore' | '/favorites' | '/rent'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BuyRoute: typeof BuyRoute
+  ExploreRoute: typeof ExploreRoute
+  FavoritesRoute: typeof FavoritesRoute
+  RentRoute: typeof RentRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/rent': {
+      id: '/rent'
+      path: '/rent'
+      fullPath: '/rent'
+      preLoaderRoute: typeof RentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/favorites': {
+      id: '/favorites'
+      path: '/favorites'
+      fullPath: '/favorites'
+      preLoaderRoute: typeof FavoritesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/explore': {
+      id: '/explore'
+      path: '/explore'
+      fullPath: '/explore'
+      preLoaderRoute: typeof ExploreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/buy': {
+      id: '/buy'
+      path: '/buy'
+      fullPath: '/buy'
+      preLoaderRoute: typeof BuyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,7 +121,21 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BuyRoute: BuyRoute,
+  ExploreRoute: ExploreRoute,
+  FavoritesRoute: FavoritesRoute,
+  RentRoute: RentRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
