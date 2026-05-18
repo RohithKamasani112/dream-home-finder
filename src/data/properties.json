@@ -1,0 +1,234 @@
+{
+  "lastId": 12,
+  "items": [
+    {
+      "id": 1,
+      "type": "villa",
+      "listing": "sell",
+      "title": "Palmera Bay Villa",
+      "price": 4250000,
+      "currency": "USD",
+      "address": "Malibu, California",
+      "beds": 5, "baths": 6, "area": 6200,
+      "verified": true, "luxury": true, "furnished": true, "readyToMove": true, "petFriendly": true,
+      "facing": "West", "age": 1, "parking": 3,
+      "description": "An infinity-edge oceanfront residence with floor-to-ceiling glass, sunken lounge, and private beach access. Designed for entertainers and quiet mornings alike.",
+      "amenities": ["Infinity Pool","Gym","Smart Home","Private Beach","Wine Cellar","Home Theatre","EV Charging"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&q=80",
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80",
+        "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1600&q=80",
+        "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "apartment",
+      "listing": "rent",
+      "title": "Soho Loft 6F",
+      "rent": 4800, "deposit": 9600, "leaseMonths": 12,
+      "currency": "USD",
+      "address": "SoHo, New York",
+      "beds": 2, "baths": 2, "area": 1450,
+      "verified": true, "newlyAdded": true, "furnished": true, "readyToMove": true, "petFriendly": false,
+      "facing": "South", "age": 8, "parking": 1,
+      "description": "Cast-iron loft with white oak floors, double-height ceilings and a chef's kitchen. Steps to the West Village.",
+      "amenities": ["Concierge","Rooftop","Gym","Laundry","Elevator"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1600&q=80",
+        "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1600&q=80",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "apartment",
+      "listing": "sell",
+      "title": "Skyline Residence 42A",
+      "price": 1850000,
+      "currency": "USD",
+      "address": "Downtown, Chicago",
+      "beds": 3, "baths": 3, "area": 2100,
+      "verified": true, "luxury": true, "furnished": false, "readyToMove": true,
+      "facing": "East", "age": 3, "parking": 2,
+      "description": "Corner sky-residence with panoramic lake views and Italian millwork throughout.",
+      "amenities": ["Pool","Gym","Spa","Concierge","Valet"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1600&q=80",
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&q=80",
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "villa",
+      "listing": "rent",
+      "title": "Cypress Hill Estate",
+      "rent": 12500, "deposit": 25000, "leaseMonths": 24,
+      "currency": "USD",
+      "address": "Beverly Hills, California",
+      "beds": 6, "baths": 7, "area": 8400,
+      "verified": true, "luxury": true, "furnished": true, "readyToMove": true, "petFriendly": true,
+      "facing": "North", "age": 2, "parking": 4,
+      "description": "Gated estate behind cypress allée with championship tennis court, screening room, and chef's garden.",
+      "amenities": ["Pool","Tennis Court","Theatre","Wine Cellar","Staff Quarters","Gated Community"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80",
+        "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1600&q=80",
+        "https://images.unsplash.com/photo-1600573472556-e636c2acda88?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "plot",
+      "listing": "sell",
+      "title": "Highland Plot 12-Acre",
+      "price": 980000, "currency": "USD",
+      "address": "Aspen, Colorado",
+      "beds": 0, "baths": 0, "area": 522720,
+      "verified": true, "newlyAdded": true,
+      "facing": "South", "age": 0, "parking": 0,
+      "description": "Build-ready parcel with mountain frontage, paved access and pre-approved architectural plans.",
+      "amenities": ["Utilities Ready","Paved Road","Mountain View"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1600&q=80",
+        "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "commercial",
+      "listing": "rent",
+      "title": "Atrium Workspace Floor 9",
+      "rent": 18500, "deposit": 37000, "leaseMonths": 36,
+      "currency": "USD",
+      "address": "Financial District, San Francisco",
+      "beds": 0, "baths": 4, "area": 6800,
+      "verified": true, "furnished": true, "readyToMove": true,
+      "facing": "West", "age": 5, "parking": 8,
+      "description": "Full-floor commercial space with private terrace, fibre redundancy and bay views.",
+      "amenities": ["Conference Rooms","Cafeteria","Bike Storage","24/7 Access"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80",
+        "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "apartment",
+      "listing": "rent",
+      "title": "Garden Court 2B",
+      "rent": 2400, "deposit": 4800, "leaseMonths": 12,
+      "currency": "USD",
+      "address": "Brooklyn Heights, New York",
+      "beds": 1, "baths": 1, "area": 780,
+      "verified": false, "newlyAdded": true, "furnished": false,
+      "facing": "East", "age": 22, "parking": 0,
+      "description": "Pre-war one bedroom with original moldings, a working fireplace and a quiet tree-lined block.",
+      "amenities": ["Laundry","Elevator","Garden"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600&q=80",
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "villa",
+      "listing": "sell",
+      "title": "Olive Grove Manor",
+      "price": 2350000, "currency": "USD",
+      "address": "Tuscany, Italy",
+      "beds": 4, "baths": 5, "area": 5400,
+      "verified": true, "luxury": true, "furnished": true,
+      "facing": "South", "age": 60, "parking": 4,
+      "description": "Restored stone manor on 8 hectares of working olive grove, with infinity pool and frescoed chapel.",
+      "amenities": ["Pool","Vineyard","Chapel","Guest House"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=1600&q=80",
+        "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "apartment",
+      "listing": "sell",
+      "title": "Marina Tower 18C",
+      "price": 720000, "currency": "USD",
+      "address": "Dubai Marina, UAE",
+      "beds": 2, "baths": 2, "area": 1180,
+      "verified": true, "furnished": true, "readyToMove": true,
+      "facing": "North", "age": 4, "parking": 1,
+      "description": "Marina-front two bedroom with floor-to-ceiling glass and a curved private balcony.",
+      "amenities": ["Pool","Gym","Concierge","Marina Access"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80",
+        "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "commercial",
+      "listing": "sell",
+      "title": "Brickline Retail Block",
+      "price": 3100000, "currency": "USD",
+      "address": "Shoreditch, London",
+      "beds": 0, "baths": 3, "area": 4200,
+      "verified": true,
+      "facing": "South", "age": 12, "parking": 6,
+      "description": "Mixed-use brick block with two retail units and mezzanine offices. Excellent footfall.",
+      "amenities": ["Frontage","Mezzanine","Storage"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80",
+        "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "villa",
+      "listing": "rent",
+      "title": "Lakeside Glass House",
+      "rent": 7200, "deposit": 14400, "leaseMonths": 12,
+      "currency": "USD",
+      "address": "Lake Como, Italy",
+      "beds": 4, "baths": 4, "area": 4100,
+      "verified": true, "luxury": true, "furnished": true, "newlyAdded": true,
+      "facing": "East", "age": 6, "parking": 3,
+      "description": "Cantilevered modern villa with private dock and seamless indoor-outdoor living.",
+      "amenities": ["Dock","Pool","Sauna","Smart Home"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=1600&q=80",
+        "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1600&q=80"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "apartment",
+      "listing": "rent",
+      "title": "Riverbend Studio",
+      "rent": 1650, "deposit": 3300, "leaseMonths": 12,
+      "currency": "USD",
+      "address": "Austin, Texas",
+      "beds": 0, "baths": 1, "area": 540,
+      "verified": false, "newlyAdded": true, "furnished": true,
+      "facing": "West", "age": 2, "parking": 1,
+      "description": "Bright studio with river views, walk-in shower, and a quiet co-working lounge downstairs.",
+      "amenities": ["Co-working","Gym","Roof Deck"],
+      "youtubeId": "dQw4w9WgXcQ",
+      "images": [
+        "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&q=80",
+        "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1600&q=80"
+      ]
+    }
+  ]
+}

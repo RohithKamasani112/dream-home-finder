@@ -1,0 +1,6 @@
+{
+  "users": [
+    { "id": 1, "name": "Admin", "email": "admin@estate.app", "phone": "+10000000000", "password": "admin123", "role": "admin" },
+    { "id": 2, "name": "Demo User", "email": "user@estate.app", "phone": "+10000000001", "password": "user123", "role": "customer" }
+  ]
+}
